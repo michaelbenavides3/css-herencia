@@ -1,0 +1,150 @@
+.main{
+    color: rebeccapurple;
+    border: 2px solid #ccc;
+    padding: 1em;
+}
+
+.especial{
+    color: black; 
+    font-weight: bold;
+}
+
+.texto ~ article {
+    background-color: gray;
+    font-size: 50px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+h1 > article{
+    color: blueviolet;
+
+}
+
+h2 + h3 {
+    color: green;
+    font-weight: bold;
+}
+
+.parrafo, .parrafo2{
+    padding: 25px;
+    
+    
+        background: red;
+        color: white;
+    }
+
+.contenedor p{
+    font-weight: bold;
+}
+
+.padre > p{
+    color: blue;
+}
+
+h2 + p{
+    color: red;
+    font-weight: bold;
+}
+
+div ~ p{
+    color: green;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    display: flex;
+}
+
+nav > ul > li{
+    position: relative;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav > ul > li:hover > a{
+    background-color: #ddd;
+    }
+
+nav > ul > li > ul > {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0, 0, 0.2);
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+}
+
+nav > ul > li > ul > li >a {
+    padding: 8px 12px;
+}
+
+nav > ul > li > ul >li:hover > a{
+    background-color: #ddd;
+}
+
+/* estilos generales para el contenedor tarejtas*/
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/*estilo para cada tarjeta*/
+.tarjeta {
+    width: 300px;
+    border: 1px solid#ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/*estilos para el titulo de la tarjeta*/
+.tarjeta .titulo{
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/*estilo para la descripcion de la tarjeta*/
+.tarjeta .descripcion{
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/*estilo para el enlace de latarjeta*/
+.tarjeta .enlace{
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*estilo para la tarjeta especial*/
+.tarjeta .especial{
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.tarjeta .especial .titulo{
+    color: #007bff;
+}
+
+.tarjeta .especial .enlace{
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
