@@ -1,3 +1,14 @@
+.contenedor > .parrafo-principal{
+    font-weight: bold;
+    color: blue;
+}
+h2 + .parrafo-hermano-adyacente{
+    text-decoration: underline;
+}
+h2~p{
+    font-style: italic;
+}
+
 .main{
     color: rebeccapurple;
     border: 2px solid #ccc;
@@ -46,9 +57,9 @@ h2 + p{
     font-weight: bold;
 }
 
-div ~ p{
+/*div ~ p{
     color: green;
-}
+}*/
 
 nav ul{
     list-style: none;
@@ -147,4 +158,164 @@ nav > ul > li > ul >li:hover > a{
     background-color: #fff;
     color: #007bff;
     border: 1px solid #007bff;
+}
+
+/*div p{
+    color: blue
+}
+div > p{
+    font-weight: bold;
+}
+h2+p{
+    text-decoration: underline;
+}
+h2~p{
+    font-style: italic;
+}*/
+
+/*esta es un selector universal*/
+* {
+    box-sizing: border-box; /*es una propiedad que cambia la forma de calcular el tamaño de los elementos*/
+}
+.contenedor-principal{
+    width: 90%;
+    margin: 20px auto;
+    display: flex; /*se utiliza para crear contenedores flexibles*/
+    justify-content: space-around;
+}
+.caja-ejemplo{
+    width: 30%;
+    border: 2px solid#333;
+    padding: 20px;
+    margin: 10px;
+}
+.caja-1{
+    background-color: #f0f0f0;
+}
+.caja-2{
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-caja{
+    background-color: #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+}
+.caja-3{
+    background-color: #d0d0d0;
+}
+
+.box-1{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    margin: 10px;
+    color: aqua;
+    background-color: gray;
+    border: solid 3px;
+}
+.box-2{
+    /* box-sizing: border-box; */
+    width: 100%;
+    height: 100%;
+    padding: 23px 50px;
+    margin: 10px 25px ;
+    border: solid 5px;
+    background-color: yellow;
+    color: green;
+}
+.box-3{
+ width: 90%;
+ margin: 20px;
+ justify-content: space-around;
+ display: flex;   
+ border: solid 3.5px;
+ }
+
+ /*.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    display: flex;
+ }
+ .menu > li{
+    position: relative;
+ }
+ .menu > li > a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+ }
+ .menu > li:hover > a{
+    background-color: #f0f0f0;
+ }
+ .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #f0f0f0;
+    display: none;
+ }
+ .menu > li:hover > .submenu{
+    display: block;
+ }
+ .submenu, li, a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333
+ }
+ .submenu, li:hover, a{
+    background-color: #ddd;
+ }
+ .menu li + li{
+    border-left: 1px solid#ccc;
+ }*/
+
+ .perfil-tarjeta{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: sans-serif;
+    margin: 20px auto;
+ }
+ .perfil-imagen{
+    width: 100%;
+    height: auto;
+ }
+ .perfil-info{
+    pad: 20px;
+ }
+ .perfil-info, h2{
+    margin-top: 0;
+    font-size: 1.5em;
+ }
+ .perfil-titulo{
+    color:#888;
+    margin-bottom: 15px;
+ }
+ .perfil-redes{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+ }
+.perfil-redes, li, a{
+    text-decoration: none;
+    color: #007bff;
+}
+.perfil-redes, li, a:hover{
+    text-decoration: underline;
+}
+.perfil-tarjeta + * {
+    margin-top: 20px;
 }
